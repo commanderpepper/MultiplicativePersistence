@@ -1,14 +1,14 @@
 fun main() {
-    val number = 23789L
+    val number = 39L
     mulPersistence(number)
 }
 
 fun mulPersistence(num: Long, distance: Int = 0) {
 
-    println("Next Number \t $num")
+    println("Number at step \t $distance - $num")
 
-    if (num.toString().length == 1) {
-        println("End Distance \t $distance")
+    if (num < 10) {
+        println("Steps \t \t \t $distance")
         return
     }
 
@@ -18,5 +18,7 @@ fun mulPersistence(num: Long, distance: Int = 0) {
     )
 
 }
+
+
 
 
